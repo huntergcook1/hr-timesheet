@@ -10,7 +10,7 @@ import { Timesheet } from './components/timesheet/timesheet';
 import { Analytics } from './components/analytics/analytics';
 import { TopNavbar } from './components/top-navbar/top-navbar';
 import { AnalyticsTable } from './components/analytics-table/analytics-table';
-
+import { MaterialModule } from './modules/material/material-module';
 @NgModule({
   declarations: [
     App,
@@ -22,7 +22,8 @@ import { AnalyticsTable } from './components/analytics-table/analytics-table';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
